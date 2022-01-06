@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { createTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+import AppBar from "./components/appBar";
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#9e9e9e',
+        },
+        secondary: {
+            main: '#880e4f',
+        },
+        contrastThreshold: 3,
+        tonalOffset: 0.2,
+        text: {
+            primary: "#000000",
+            secondary: "#545454",
+        }
+    },
+    typography: {
+        fontFamily: [
+            '-apple-system',
+            'BlinkMacSystemFont',
+            '"Segoe UI"',
+            'Roboto',
+            '"Helvetica Neue"',
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+        ].join(','),
+    },
+});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return(
+        <ThemeProvider theme={theme} >
+            <AppBar/>
+        </ThemeProvider>
+    );
 }
 
 export default App;
