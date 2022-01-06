@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/mar-bark/static/js/main.9a89134f.js",
+    "static/media/appForm.doc": "/mar-bark/static/media/appForm.fce2dab97b790e7ffb0d.doc",
+    "static/media/banner.webp": "/mar-bark/static/media/banner.91ca4199378b17c9a601.webp",
+    "index.html": "/mar-bark/index.html",
+    "main.9a89134f.js.map": "/mar-bark/static/js/main.9a89134f.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9a89134f.js"
+  ]
+}
