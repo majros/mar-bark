@@ -16,8 +16,6 @@ import Fleet from "./pages/fleet";
 import Application from "./pages/application";
 import Contact from "./pages/contact";
 
-import Test from '../test'
-
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -77,7 +75,10 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(2),
     },
     bannerLogo: {
-        zoom: '50%'
+        backgroundImage: `url(${bannerLogo})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
     },
 }));
 
@@ -106,7 +107,9 @@ export default function CustomAppBar() {
                         </Box>
                     </Typography>
                 </Toolbar>
-                <img className={classes.bannerLogo} alt='icon' src={bannerLogo}/>
+                <div className={classes.bannerLogo}>
+                    <div style={{ height: '50vh' }}/>
+                </div>
                 <Tabs
                     value={value}
                     onChange={handleChange}

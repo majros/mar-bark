@@ -1,5 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
+import Button from '@material-ui/core/Button';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 const Contact = () => {
     return(
@@ -26,6 +28,18 @@ const Contact = () => {
             Phones: +38-0629-413625/28
             <br/>
             e-mail: info@bark.com.ua
+            <br/>
+            <br/>
+            <Button
+                variant="contained"
+                size="small"
+                style={{backgroundColor: "#ea4c89", color: "#FFF"}}
+                startIcon={<InstagramIcon />}
+                target='_blank'
+                href={'https://www.instagram.com/bark_agency/?hl=ru'}
+            >
+                instagram
+            </Button>
         </React.Fragment>
     );
 }
