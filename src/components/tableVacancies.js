@@ -52,7 +52,7 @@ export default function BasicTable() {
                                 <StyledTableCell>SHIP TYPE</StyledTableCell>
                                 <StyledTableCell>DWT</StyledTableCell>
                                 <StyledTableCell>SALARY (USD)</StyledTableCell>
-                                <StyledTableCell>DURATION (MONTHS)</StyledTableCell>
+                                <StyledTableCell>DURATION</StyledTableCell>
                                 <StyledTableCell>JOIN DATE</StyledTableCell>
                                 <StyledTableCell>ADDITIONAL INFO</StyledTableCell>
                             </TableRow>

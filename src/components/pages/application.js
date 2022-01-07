@@ -52,7 +52,7 @@ const Application = () => {
                     variant="contained"
                     color="default"
                     href={offenAppForm}
-                    download="appForm"
+                    download="offenAppForm"
                     startIcon={<GetAppIcon/>}
             >
                 CPO application form
@@ -66,7 +66,7 @@ const Application = () => {
                     variant="contained"
                     color="default"
                     href={bulkerAppForm}
-                    download="appForm"
+                    download="bulkerAppForm"
                     startIcon={<GetAppIcon/>}
             >
                 Bulker application form
