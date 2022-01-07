@@ -11,6 +11,7 @@ const theme = createTheme({
         },
         secondary: {
             main: '#880e4f',
+            alt: '#81d4fa',
         },
         contrastThreshold: 3,
         tonalOffset: 0.2,
