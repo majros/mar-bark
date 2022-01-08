@@ -47,7 +47,7 @@ const Contact = () => {
             </Typography>
             <Typography className={classes.textBody} component="div" variant="body1" color="textPrimary" >
                 <Box fontFamily="Roboto" textAlign="left" m={1}>
-                    11, Chernomorskaya str., 27 apt.,
+                    27 apt. 11 Chernomorskaya str.
                     <br/>
                     Mariupol Ukraine
                     <br/>
