@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/mar-bark/static/js/main.6f4de642.js",
-    "static/media/offen_app_form.doc": "/mar-bark/static/media/offen_app_form.a4105b74b9d9c8fe5d83.doc",
+    "main.js": "/mar-bark/static/js/main.fd4a31c1.js",
+    "static/media/offen_app_form.doc": "/mar-bark/static/media/offen_app_form.46fa9d57e14caea5ff2b.doc",
     "static/media/bulker_app_form.doc": "/mar-bark/static/media/bulker_app_form.fdbf2e2c987ddfdbc2ff.doc",
     "static/media/banner.webp": "/mar-bark/static/media/banner.91ca4199378b17c9a601.webp",
     "index.html": "/mar-bark/index.html",
-    "main.6f4de642.js.map": "/mar-bark/static/js/main.6f4de642.js.map"
+    "main.fd4a31c1.js.map": "/mar-bark/static/js/main.fd4a31c1.js.map"
   },
   "entrypoints": [
-    "static/js/main.6f4de642.js"
+    "static/js/main.fd4a31c1.js"
   ]
 }
