@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
    root: {
@@ -55,7 +56,10 @@ const Fleet = () => {
                         It has some 40 container vessels in service or currently under construction; most of them are chartered
                         under long-term contract to leading shipping lines. They are employed in worldwide service.
                         <br/>
-                        Ship specifications are available on www.offengroup.de
+                        Ship specifications are available on
+                        <Link target="_blank" rel="noreferrer" href={'https://offengroup.de/'}>
+                            &nbsp; www.offengroup.de
+                        </Link>
                 </Box>
             </Typography>
             <Typography className={classes.textBody} component="div" variant="h6" color="textSecondary" >
@@ -68,7 +72,10 @@ const Fleet = () => {
                         Samos Steamship is a ship management company operating a mixed fleet of tankers and bulk carriers.
                         Samos manages a fleet of 3.0 million tons of an average age of 7 years.
                         <br/>
-                        Ship specifications are available on www.samossteamship.gr
+                        Ship specifications are available on
+                        <Link target="_blank" rel="noreferrer" href={'https://samossteamship.gr/#home'}>
+                            &nbsp; www.samossteamship.gr
+                        </Link>
                 </Box>
             </Typography>
             <Typography className={classes.textBody} component="div" variant="h6" color="textSecondary" >
@@ -83,7 +90,10 @@ const Fleet = () => {
                         All  vessels are built in top yards in Japan and Korea, ordered to a very high  specification
                         to meet the requirements of even the most demanding charterers and terminals worldwide
                         <br/>
-                        Ship specifications are available on www.albertashipmanagement.com
+                        Ship specifications are available on
+                        <Link target="_blank" rel="noreferrer" href={'https://albertashipmanagement.com/'}>
+                            &nbsp; www.albertashipmanagement.com
+                        </Link>
                 </Box>
             </Typography>
             <Typography className={classes.textBody} component="div" variant="h6" color="textSecondary" >
@@ -96,7 +106,10 @@ const Fleet = () => {
                         A.M.Nomikos operates a mixed fleet of bulk carriers and container vessels.
                         The Company is developing dynamically and for the time being total number of ships under control is above 50 units.
                         <br/>
-                        Ship specifications are available on www.amnomikos.com
+                        Ship specifications are available on
+                    <Link target="_blank" rel="noreferrer" href={'https://www.amnomikos.com/'}>
+                        &nbsp; www.amnomikos.com
+                    </Link>
                 </Box>
             </Typography>
         </Paper>

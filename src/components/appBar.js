@@ -99,7 +99,7 @@ export default function CustomAppBar() {
                     <img className={classes.logo} alt='icon' src={imgLogo}/>
                     <Typography component="div" variant="subtitle2" color="textPrimary">
                         <Box fontFamily='"Segoe UI"' m={1}>
-                            +38 0629 41-36-<b>(25) (38)</b>
+                            +38 0629 41-36-<b>(25) (28)</b>
                             <br/>
                             +38 0629 41-71-<b>(48) (49) (50)</b>
                             <br/>
