@@ -64,6 +64,7 @@ const Contact = () => {
                 style={{backgroundColor: "#ea4c89", color: "#FFF"}}
                 startIcon={<InstagramIcon />}
                 target='_blank'
+                rel="noreferrer"
                 href={'https://www.instagram.com/bark_agency/?hl=ru'}
             >
                 instagram

@@ -1,5 +1,4 @@
 function createData( key, openPosition, position, shipType, dwt, salary, duration, joinDate, additionalInfo) {
-    key += 1;
     return { key, openPosition, position, shipType, dwt, salary, duration, joinDate, additionalInfo };
 }
 
