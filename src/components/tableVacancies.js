@@ -9,6 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import axios from '../axios/axios-vacancies';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import ErrorIndicator from "./error-indicator";
 // import Switch from '@material-ui/core/Switch';
 
 const useStyles = theme => ({
@@ -53,7 +54,8 @@ const StyledTableRow = withStyles((theme) => ({
 class VacanciesTable extends Component {
     state = {
         rows: [],
-        loading: true
+        loading: true,
+        error: false
     }
 
     renderTables () {
@@ -83,38 +85,53 @@ class VacanciesTable extends Component {
                 loading: false
             })
         } catch (e) {
-            console.log(e)
+            this.onError()
         }
     }
 
+    onError = (err) => {
+        this.setState({
+            error: true,
+            loading: false
+        });
+    };
+
     render() {
         const { classes } = this.props;
-        const { loading } = this.state;
+        const { loading, error } = this.state;
+
+        const hasData = !(loading || error);
+
+        const errorMessage = error ? <ErrorIndicator /> : null;
+        const spinner = loading ? <CircularProgress className={classes.spinner} color="secondary"/> : null;
+        const content = hasData
+            ? <TableContainer>
+                <Table className={classes.table} aria-label="customized table">
+                    <TableHead>
+                        <TableRow>
+                            <StyledTableCell>OPEN POSITIONS</StyledTableCell>
+                            <StyledTableCell>POSITION</StyledTableCell>
+                            <StyledTableCell>SHIP TYPE</StyledTableCell>
+                            <StyledTableCell>DWT</StyledTableCell>
+                            <StyledTableCell>SALARY (USD)</StyledTableCell>
+                            <StyledTableCell>DURATION</StyledTableCell>
+                            <StyledTableCell>JOIN DATE</StyledTableCell>
+                            <StyledTableCell>ADDITIONAL INFO</StyledTableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        { this.renderTables() }
+                    </TableBody>
+                </Table>
+            </TableContainer>
+            : null;
 
         return (
             <div className={classes.root}>
                 <Paper className={classes.paper} elevation={3} >
-                    {loading ?
-                        <CircularProgress className={classes.spinner} color="secondary"/>
-                        : <TableContainer>
-                            <Table className={classes.table} aria-label="customized table">
-                                <TableHead>
-                                    <TableRow>
-                                        <StyledTableCell>OPEN POSITIONS</StyledTableCell>
-                                        <StyledTableCell>POSITION</StyledTableCell>
-                                        <StyledTableCell>SHIP TYPE</StyledTableCell>
-                                        <StyledTableCell>DWT</StyledTableCell>
-                                        <StyledTableCell>SALARY (USD)</StyledTableCell>
-                                        <StyledTableCell>DURATION</StyledTableCell>
-                                        <StyledTableCell>JOIN DATE</StyledTableCell>
-                                        <StyledTableCell>ADDITIONAL INFO</StyledTableCell>
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                    { this.renderTables() }
-                                </TableBody>
-                            </Table>
-                        </TableContainer>}
+                    { errorMessage }
+                    { spinner }
+                    { content }
                     {/*<div className={classes.switchBtn}>*/}
                     {/*    <Switch*/}
                     {/*        size="small"*/}
