@@ -47,13 +47,13 @@ const Contact = () => {
             </Typography>
             <Typography className={classes.textBody} component="div" variant="body1" color="textPrimary" >
                 <Box fontFamily="Roboto" textAlign="left" m={1}>
-                    27 apt. 11 Chernomorskaya str.
+                    6 of. 14 Dyukovskaya str.
                     <br/>
-                    Mariupol Ukraine
+                    Odessa Ukraine
                     <br/>
-                    Phones: +38 0629 41-36-<b>25/28</b>
+                    Phones: +38 048 740-70-<b>(53) (54) (55)</b>
                     <br/>
-                    Phones: +38 0629 41-71-<b>48/49/50</b>
+                    Fax: +38 048 740-70-56
                     <br/>
                     e-mail: info@bark.com.ua
                 </Box>

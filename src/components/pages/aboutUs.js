@@ -35,8 +35,9 @@ const AboutUs = () => {
                     About us
                 </Box>
             </Typography>
+
             <Typography className={classes.textBody} component="div" variant="h5" color="textPrimary" >
-                <Box fontFamily="Roboto" textAlign="justify" m={1}>
+                <Box fontFamily="Roboto" textAlign="justify" m={5}>
                     WELCOME TO BARK MANNING AGENCY!
                 </Box>
             </Typography>
@@ -48,7 +49,7 @@ const AboutUs = () => {
                 </Box>
             </Typography>
             <Typography className={classes.textBody} component="div" variant="h5" color="textPrimary" >
-                <Box fontFamily="Roboto" textAlign="justify" m={1}>
+                <Box fontFamily="Roboto" textAlign="justify" m={5}>
                     BARK PERFORMS FOLLOWING SERVICES:
                 </Box>
             </Typography>
@@ -62,6 +63,66 @@ const AboutUs = () => {
                     <li>Foreign language test.</li>
                     <li>Company policy and ISM code familiarisation & drilling.</li>
                     <li>Issue tickets for on-signers.</li>
+                </Box>
+            </Typography>
+            <Typography className={classes.textBody} component="div" variant="h5" color="textPrimary" >
+                <Box fontFamily="Roboto" textAlign="justify" m={5}>
+                    Уважаемые моряки,
+                    <br/>
+                    настоящим ставим Вас в известность о начале работы c 01.04.2022 обьединенного
+                    <br/>
+                    координационоого центра МА Марстафф Одесса и Барк Мариуполь в Греции.
+                </Box>
+            </Typography>
+            <Typography className={classes.textBody} component="div" variant="body1" color="textPrimary" >
+                <Box fontFamily="Roboto" textAlign="left" m={1}>
+                    Телефоны:
+                    <br/>
+                    +30 697 195 4418 - Юлия
+                    <br/>
+                    +30 697 195 4419 - Анна
+                    <br/>
+                    e-mail: barkmarstaffgr@gmail.com
+                    <br/>
+                    все мессенджеры:
+                    <br/>
+                    +38 066 271 3222 - Юлия
+                    <br/>
+                    +38 097 733 5077 - Анна
+                    <br/>
+                    Все услуги предоствляются бесплатно, обновление вакансий на сайте
+                    <br/>
+                    www.bark.com.ua
+                </Box>
+            </Typography>
+            <Typography className={classes.textBody} component="div" variant="h5" color="textPrimary" >
+                <Box fontFamily="Roboto" textAlign="justify" m={5}>
+                    Dear seafarers,
+                    <br/>
+                    herewith informing that starting from 01.04.2022 united coordinating centre of crewing
+                    <br/>
+                    agencies Marstaff Odessa and Bark Mariupol will work in Greece.
+                </Box>
+            </Typography>
+            <Typography className={classes.textBody} component="div" variant="body1" color="textPrimary" >
+                <Box fontFamily="Roboto" textAlign="left" m={1}>
+                    phones:
+                    <br/>
+                    +30 697 195 4418 - Mrs.Yulia
+                    <br/>
+                    +30 697 195 4419 - Mrs.Anna
+                    <br/>
+                    e-mail: barkmarstaffgr@gmail.com
+                    <br/>
+                    all messengers:
+                    <br/>
+                    +38 066 271 3222 - Mrs.Yulia
+                    <br/>
+                    +38 097 733 5077 - Mrs.Anna
+                    <br/>
+                    All services are free of charge, update of avaiable vacancies, please, see
+                    <br/>
+                    www.bark.com.ua
                 </Box>
             </Typography>
         </Paper>
