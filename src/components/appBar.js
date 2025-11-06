@@ -108,11 +108,6 @@ export default function CustomAppBar() {
     };
 
     const isWide = window.innerWidth >= 600;
-    const leftBoxStyle = {
-        minWidth: isWide ? 360 : 'auto',
-        marginRight: isWide ? 24 : 0, // эквивалент theme.spacing(3)
-        paddingRight: isWide ? 8 : 0,
-    };
 
     return (
         <div className={classes.root}>

@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React from "react";
 import {withStyles} from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import DeleteIcon from "@material-ui/icons/Delete";

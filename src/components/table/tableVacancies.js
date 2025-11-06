@@ -43,7 +43,6 @@ const useStyles = theme => ({
 
 const StyledTableCell = withStyles((theme) => ({
     head: {
-        backgroundColor: theme.palette.secondary.alt,
         color: theme.palette.common.black,
     },
     body: {
