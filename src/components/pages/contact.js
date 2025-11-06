@@ -50,14 +50,39 @@ const Contact = () => {
                     6 of. 14 Dyukovskaya str.
                     <br/>
                     Odessa Ukraine
-                    <br/>
-                    Phones: +38 048 740-70-<b>(53) (54) (55)</b>
-                    <br/>
-                    Fax: +38 048 740-70-56
-                    <br/>
-                    e-mail: info@bark.com.ua
                 </Box>
             </Typography>
+            <Typography className={classes.textBody} component="div" variant="body1" color="textPrimary" >
+                <Box fontFamily="Roboto" textAlign="left" m={1}>
+                    Phones: +38 048 740-70-<b>(53) (54) (55)</b>
+                    <br/>
+                    +30 697 195 4418 - Mrs.Yulia
+                    <br/>
+                    +30 697 195 4419 - Mrs.Anna
+                </Box>
+            </Typography>
+            <Typography className={classes.textBody} component="div" variant="body1" color="textPrimary" >
+                <Box fontFamily="Roboto" textAlign="left" m={1}>
+                    Fax: +38 048 740-70-56
+                </Box>
+            </Typography>
+            <Typography className={classes.textBody} component="div" variant="body1" color="textPrimary" >
+                <Box fontFamily="Roboto" textAlign="left" m={1}>
+                    all messengers:
+                    <br/>
+                    +38 066 271 3222 - Mrs.Yulia
+                    <br/>
+                    +38 097 733 5077 - Mrs.Anna
+                </Box>
+            </Typography>
+            <Typography className={classes.textBody} component="div" variant="body1" color="textPrimary" >
+                <Box fontFamily="Roboto" textAlign="left" m={1}>
+                    e-mail: info@bark.com.ua
+                    <br/>
+                    e-mail: barkmarstaffgr@gmail.com
+                </Box>
+            </Typography>
+
             <Button className={classes.btn}
                     variant="contained"
                 size="small"

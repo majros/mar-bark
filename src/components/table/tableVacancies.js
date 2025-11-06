@@ -60,7 +60,7 @@ class VacanciesTable extends Component {
         error: false
     }
 
-    async componentDidMount() {
+     async componentDidMount() {
         try {
             const response = await axios.get('/ListOfJobs.json')
             const rows = response.data

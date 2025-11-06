@@ -1,0 +1,1 @@
+Invoke-RestMethod -Method Put -Uri "https://vacancies-15604-default-rtdb.europe-west1.firebasedatabase.app/.json" -ContentType "application/json" -InFile .\vacancies-15604-default-rtdb-export.json

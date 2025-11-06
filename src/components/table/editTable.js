@@ -26,7 +26,7 @@ const StyledTableRow = withStyles((theme) => ({
 }))(TableRow);
 
 const editTable = (rows) => {
-    console.log(rows)
+    //console.log(rows)
     return rows.map(row => {
         return (
             <StyledTableRow key={row.key}>

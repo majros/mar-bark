@@ -1,0 +1,180 @@
+{
+  "ListOfJobs": [
+    {
+      "key": 1,
+      "openPosition": "1",
+      "position": "CHIEF OFFICER",
+      "shipType": "Bulk Carrier",
+      "dwt": "DWT 50 000 – 60 000",
+      "duration": "5+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "ASAP",
+      "salary": "7200-7400$"
+    },
+    {
+      "key": 2,
+      "openPosition": "1",
+      "position": "CHIEF OFFICER",
+      "shipType": "CONTAINER",
+      "dwt": "DWT 60 000",
+      "duration": "5+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "ASAP",
+      "salary": "7200-7400$"
+    },
+    {
+      "key": 3,
+      "openPosition": "1",
+      "position": "SECOND OFFICER",
+      "shipType": "Bulk Carrier",
+      "dwt": "DWT 50 000 – 60 000",
+      "duration": "7+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more.",
+      "joinDate": "21.11.2025",
+      "salary": "3600$"
+    },
+    {
+      "key": 4,
+      "openPosition": "1",
+      "position": "SECOND OFFICER",
+      "shipType": "Bulk Carrier",
+      "dwt": "DWT 50 000 – 60 000",
+      "duration": "7+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "BEG OF DECEMBER",
+      "salary": "3600$"
+    },
+    {
+      "key": 5,
+      "openPosition": "1",
+      "position": "SECOND OFFICER",
+      "shipType": "Bulk Carrier",
+      "dwt": "DWT 50 000 – 60 000",
+      "duration": "7+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "END OF DECEMBER",
+      "salary": "3600$"
+    },
+    {
+      "key": 6,
+      "openPosition": "1",
+      "position": "THIRD OFFICER",
+      "shipType": "Bulk Carrier",
+      "dwt": "DWT 50 000 – 60 000",
+      "duration": "7+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "15.11.2025",
+      "salary": "3000$"
+    },
+    {
+      "key": 7,
+      "openPosition": "1",
+      "position": "THIRD OFFICER",
+      "shipType": "Bulk Carrier",
+      "dwt": "DWT 50 000 – 60 000",
+      "duration": "7+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "15.11.2025",
+      "salary": "3000$"
+    },
+    {
+      "key": 8,
+      "openPosition": "1",
+      "position": "THIRD OFFICER",
+      "shipType": "Bulk Carrier",
+      "dwt": "DWT 50 000 – 60 000",
+      "duration": "7+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "BEG OF DECEMBER",
+      "salary": "3000$"
+    },
+    {
+      "key": 9,
+      "openPosition": "1",
+      "position": "CHIEF ENGINEER",
+      "shipType": "BULKER",
+      "dwt": "DWT 55 000",
+      "duration": "5+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "15.12.2025",
+      "salary": "8900-9300$"
+    },
+    {
+      "key": 10,
+      "openPosition": "1",
+      "position": "SECOND ENGINEER",
+      "shipType": "CONTAINER",
+      "dwt": "DWT 60 000",
+      "duration": "5+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "12.11.2025",
+      "salary": "7200-7400$"
+    },
+    {
+      "key": 11,
+      "openPosition": "1",
+      "position": "THIRD ENGINEER",
+      "shipType": "BULKER",
+      "dwt": "DWT 55 000",
+      "duration": "7+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "BEG OF DECEMBER",
+      "salary": "3600$"
+    },
+    {
+      "key": 12,
+      "openPosition": "1",
+      "position": "ETO",
+      "shipType": "BULKER",
+      "dwt": "DWT 55 000",
+      "duration": "5+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "FROM 30.11.2025",
+      "salary": "5200-5500$"
+    },
+    {
+      "key": 13,
+      "openPosition": "1",
+      "position": "OS",
+      "shipType": "BULKER",
+      "dwt": "DWT 55 000",
+      "duration": "8+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "MID/END OF NOVEMBER",
+      "salary": "1200$"
+    },
+    {
+      "key": 14,
+      "openPosition": "1",
+      "position": "OILER",
+      "shipType": "BULKER",
+      "dwt": "DWT 55 000",
+      "duration": "8+/-1 months",
+      "additionalInfo": "Minimum 2 last contracts from same owner. Minimum 2-3 contracts in rank BC DWT 25.000 and more. Fully vaccinated.",
+      "joinDate": "MID OF NOVEMBER",
+      "salary": "1500$"
+    },
+    {
+      "key": 15,
+      "openPosition": "1",
+      "position": "ELC CADET",
+      "shipType": "BULKER",
+      "dwt": "DWT 55 000",
+      "duration": "6+/-1 months",
+      "additionalInfo": "Fully vaccinated. Good English.",
+      "joinDate": "MID OF NOVEMBER",
+      "salary": "510$"
+    },
+    {
+      "key": 16,
+      "openPosition": "1",
+      "position": "FITTER CADET",
+      "shipType": "BULKER",
+      "dwt": "DWT 55 000",
+      "duration": "6+/-1 months",
+      "additionalInfo": "Fully vaccinated. Good English.",
+      "joinDate": "MID OF NOVEMBER",
+      "salary": "510$"
+    }
+  ]
+}

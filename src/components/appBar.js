@@ -2,11 +2,12 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import {makeStyles, withStyles} from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Box from "@material-ui/core/Box";
 import PropTypes from "prop-types";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
+import Grid from '@material-ui/core/Grid';
 
 import imgLogo from '../img/logo.gif';
 import bannerLogo from '../img/banner.webp';
@@ -29,8 +30,8 @@ function TabPanel(props) {
         >
             {value === index && (
                 <span>
-                   {children}
-                </span>
+          {children}
+        </span>
             )}
         </div>
     );
@@ -76,9 +77,23 @@ const useStyles = makeStyles((theme) => ({
     },
     bannerLogo: {
         backgroundImage: `url(${bannerLogo})`,
-        backgroundPosition: 'center',
+        backgroundPosition: 'center 60%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        height: '35vh',
+    },
+    contactsContainer: {
+        fontFamily: '"Segoe UI"',
+        margin: theme.spacing(1),
+        width: '100%',
+    },
+    leftBox: {
+        display: 'flex',
+        flexDirection: 'column',
+        lineHeight: 1.45,
+    },
+    rightBox: {
+        lineHeight: 1.45,
     },
 }));
 
@@ -92,24 +107,32 @@ export default function CustomAppBar() {
         setValue(newValue);
     };
 
+    const isWide = window.innerWidth >= 600;
+    const leftBoxStyle = {
+        minWidth: isWide ? 360 : 'auto',
+        marginRight: isWide ? 24 : 0, // эквивалент theme.spacing(3)
+        paddingRight: isWide ? 8 : 0,
+    };
+
     return (
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar className={classes.toolbar}>
-                    <img className={classes.logo} alt='icon' src={imgLogo}/>
+                    <img className={classes.logo} alt='icon' src={imgLogo} />
                     <Typography component="div" variant="subtitle2" color="textPrimary">
                         <Box fontFamily='"Segoe UI"' m={1}>
-                            +38 0629 41-36-<b>(25) (28)</b>
-                            <br/>
-                            +38 0629 41-71-<b>(48) (49) (50)</b>
-                            <br/>
-                            info@bark.com.ua
+                            all messengers:
+                            <br />
+                            +38 066 271 3222 - <b> Mrs.Yulia </b>
+                            <br />
+                            +38 097 733 5077 - <b> Mrs.Anna </b>
                         </Box>
                     </Typography>
                 </Toolbar>
+
                 <div className={classes.bannerLogo}>
-                    <div style={{ height: '50vh' }}/>
                 </div>
+
                 <Tabs
                     value={value}
                     onChange={handleChange}
@@ -118,7 +141,6 @@ export default function CustomAppBar() {
                     scrollButtons="on"
                     variant={setCenter}
                     aria-label="scrollable auto tabs"
-
                 >
                     <AntTab label="ABOUT US" {...a11yProps(0)} />
                     <AntTab label="VACANCIES" {...a11yProps(1)} />
@@ -127,21 +149,23 @@ export default function CustomAppBar() {
                     <AntTab label="CONTACT" {...a11yProps(4)} />
                 </Tabs>
             </AppBar>
+
             <TabPanel value={value} index={0}>
-                <AboutUs/>
+                <AboutUs />
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <Vacancies/>
+                <Vacancies />
             </TabPanel>
             <TabPanel value={value} index={2}>
-                <Fleet/>
+                <Fleet />
             </TabPanel>
             <TabPanel value={value} index={3}>
-                <Application/>
+                <Application />
             </TabPanel>
             <TabPanel value={value} index={4}>
-                <Contact/>
+                <Contact />
             </TabPanel>
         </div>
     );
 }
+////
