@@ -7,7 +7,6 @@ import Box from "@material-ui/core/Box";
 import PropTypes from "prop-types";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
-import Grid from '@material-ui/core/Grid';
 
 import imgLogo from '../img/logo.gif';
 import bannerLogo from '../img/banner.webp';
@@ -73,14 +72,14 @@ const useStyles = makeStyles((theme) => ({
     },
     logo: {
         height: window.innerWidth > 450 ? 70 : 25,
-        margin: theme.spacing(2),
+        margin: theme.spacing(1),
     },
     bannerLogo: {
         backgroundImage: `url(${bannerLogo})`,
         backgroundPosition: 'center 60%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        height: '35vh',
+        height: '45vh',
     },
     contactsContainer: {
         fontFamily: '"Segoe UI"',
@@ -95,6 +94,14 @@ const useStyles = makeStyles((theme) => ({
     rightBox: {
         lineHeight: 1.45,
     },
+    toolbarWrapper: {
+        backgroundColor: 'rgba(80,80,80,0.5)', // полупрозрачный серый
+        width: '100%',
+        backdropFilter: 'blur(4px)',
+        WebkitBackdropFilter: 'blur(4px)',
+        borderRadius: 4, // если нужен скруглённый угол
+        display: 'inline-block', // чтобы не растягивался на всю ширину
+    },
 }));
 
 export default function CustomAppBar() {
@@ -107,26 +114,28 @@ export default function CustomAppBar() {
         setValue(newValue);
     };
 
-    const isWide = window.innerWidth >= 600;
+    // const isWide = window.innerWidth >= 600;
 
     return (
         <div className={classes.root}>
             <AppBar position="static">
-                <Toolbar className={classes.toolbar}>
-                    <img className={classes.logo} alt='icon' src={imgLogo} />
-                    <Typography component="div" variant="subtitle2" color="textPrimary">
-                        <Box fontFamily='"Segoe UI"' m={1}>
-                            all messengers:
-                            <br />
-                            +38 066 271 3222 - <b> Mrs.Yulia </b>
-                            <br />
-                            +38 097 733 5077 - <b> Mrs.Anna </b>
-                        </Box>
-                    </Typography>
-                </Toolbar>
-
                 <div className={classes.bannerLogo}>
+                    <div className={classes.toolbarWrapper}>
+                        <Toolbar className={classes.toolbar}>
+                            <img className={classes.logo} alt='icon' src={imgLogo} />
+                            <Typography component="div" variant="subtitle2" color="textPrimary">
+                                <Box fontFamily='"Segoe UI"' m={1}>
+                                    all messengers:
+                                    <br />
+                                    +38 066 271 3222 - <b>Mrs.Yulia</b>
+                                    <br />
+                                    +38 097 733 5077 - <b>Mrs.Anna</b>
+                                </Box>
+                            </Typography>
+                        </Toolbar>
+                    </div>
                 </div>
+
 
                 <Tabs
                     value={value}

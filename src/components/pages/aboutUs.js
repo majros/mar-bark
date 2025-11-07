@@ -13,11 +13,12 @@ const useStyles = makeStyles((theme) => ({
         position: "relative",
     },
     paper: {
-        padding: theme.spacing(2),
+        paddingBottom: theme.spacing(2),
+        margin: theme.spacing(2),
     },
     textHeaderPage: {
         fontWeight: 700,
-        padding: theme.spacing(3),
+        padding: theme.spacing(1),
     },
     textBody: {
         marginLeft: theme.spacing(2),
@@ -69,7 +70,7 @@ const AboutUs = () => {
                 <Box fontFamily="Roboto" textAlign="justify" m={5}>
                     Dear seafarers,
                     herewith informing that starting from 01.04.2022 united coordinating centre of crewing
-                    agencies Marstaff Odessa and Bark Mariupol will work in Greece.
+                    agencies Marstaff Odessa and Bark Mariupol has been working in Greece.
                 </Box>
             </Typography>
         </Paper>

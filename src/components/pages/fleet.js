@@ -12,13 +12,14 @@ const useStyles = makeStyles((theme) => ({
         width: '95%',
         position: "relative",
    },
-   paper: {
-        padding: theme.spacing(2),
-   },
-   textHeaderPage: {
+    paper: {
+        paddingBottom: theme.spacing(2),
+        margin: theme.spacing(2),
+    },
+    textHeaderPage: {
         fontWeight: 700,
-        padding: theme.spacing(3),
-   },
+        padding: theme.spacing(1),
+    },
    textBody: {
         marginLeft: theme.spacing(2),
         marginRight: theme.spacing(2),
